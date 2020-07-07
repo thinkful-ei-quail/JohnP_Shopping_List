@@ -12,7 +12,7 @@ function makeAList() {
         //checks if input field is not an empty string//
         if (userInput !== '') {
             $('.shopping-list').append(`<li>
-          <span class="shopping-item">${userInpt}</span>
+          <span class="shopping-item">${userInput}</span>
           <div class= "shopping-item-controls" >
             <button class= "shopping-item-toggle" >
               <span class= "button-label" >check</span>
