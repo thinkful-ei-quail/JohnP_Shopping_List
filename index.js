@@ -1,24 +1,24 @@
 'use strict';
 
-function funkyList() {
+function makeAList() {
 
     //activates when information is submitted
     //and prevents defaul action from submitting//
     $('#js-shopping-list-form').submit(function (event) {
         event.preventDefault();
 
-        const listItem = $('.js-shopping-list-entry').val();
+        const userInput = $('.js-shopping-list-entry').val();
 
         //checks if input field is not an empty string//
-        if (listItem !== '') {
+        if (userInput !== '') {
             $('.shopping-list').append(`<li>
-          <span class="shopping-item">${listItem}</span>
-          <div class="shopping-item-controls">
-            <button class="shopping-item-toggle">
-              <span class="button-label">check</span>
+          <span class="shopping-item">${userInpt}</span>
+          <div class= "shopping-item-controls" >
+            <button class= "shopping-item-toggle" >
+              <span class= "button-label" >check</span>
             </button>
-            <button class="shopping-item-delete">
-              <span class="button-label">delete</span>
+            <button class= "shopping-item-delete" >
+              <span class= "button-label" >delete</span>
             </button>
           </div>
         </li>`);
@@ -43,4 +43,4 @@ function funkyList() {
 
 
 
-$(funkyList);
+$(makeAList);
