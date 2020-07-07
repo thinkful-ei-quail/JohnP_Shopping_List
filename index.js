@@ -2,7 +2,8 @@
 
 function funkyList() {
 
-    //activates when information is submitted//
+    //activates when information is submitted
+    //and prevents defaul action from submitting//
     $('#js-shopping-list-form').submit(function (event) {
         event.preventDefault();
 
